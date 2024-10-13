@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #002f6c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #00539b;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: #003f73;
+}
+
+nav a.active {
+    background-color: #003f73;
+}
+
+section {
+    padding: 20px;
+}
+
+section.active {
+    display: block;
+}
+
+footer {
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #002f6c;
+}
+
+.people, .projects, .repository {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.person img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#section-menu {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Stile per la dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Contenuto del menu a tendina nascosto per default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Stile per i link nella tendina */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mostra il menu a tendina quando si fa hover sul bottone */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Cambia il colore del link quando ci passi sopra */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
